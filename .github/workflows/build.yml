@@ -211,7 +211,7 @@ jobs:
         with:
           gradle-version: '8.10.2'
 
-            - name: Android SDK
+      - name: Android SDK
         uses: android-actions/setup-android@v3
         with:
           packages: 'platform-tools platforms;android-35 build-tools;34.0.0 build-tools;35.0.0'

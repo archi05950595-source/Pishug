@@ -213,6 +213,8 @@ jobs:
 
       - name: Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-35 build-tools;34.0.0 build-tools;35.0.0'
 
       - name: Android API 35
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
